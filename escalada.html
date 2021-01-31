@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escalada en Montblanc</title>
+    <style> /* css estilo interno */
+        body {
+            background: linear-gradient(200deg, rgb(129, 233, 115), orange,red);
+            
+        }
+        h1 {
+            color: rgb(99, 5, 5);
+            font-size: 50px;
+            background-color: rgb(49, 143, 250);
+        }  
+        h2 {
+            color: rgb(6, 0, 88);
+            font-size: 30px;
+        }
+        p {
+            font-size: 25px;
+        }
+        * {font-size: 20px;}
+    </style>
+    
+</head>
+<body>
+    <h1><!--Important pel CERCADOR! nomes sen pot posar 1 o et penalitza el cercador -->
+        Escalada en Montblanc
+    </h1>
+    <h2>
+        Sector xiquipark
+    </h2> 
+    <img src="C:\Users\34639\Desktop\escalada\retxikipark.jpg" alt="img no dispon" width="" height="342"><!-- src= /source)path de la imatge -->
+    <img src="C:\Users\34639\Desktop\escalada\IMG-20201003-WA0016.jpg" alt="img no dispon"width="" height="342"><!-- src= /source)path de la imatge -->
+ <!-- alt= el k surt quan la img no es carrega fer una descripcio de la img-->
+ <p style="color: green;">
+     Reccomendado para debutantes y niños. Niveles disponiblies V-6b.Altura maxima 25 metros. Equipado 2017.
+
+</p>
+ <p >
+     Piedra caliza de buena calidad.
+ </p>
+ <h3 >Lista de las vías</h3>
+ <div style="display: flex; justify-content: center;">
+ <ol>
+    <li style="color: chartreuse;">Diedre formiga, V+, 15m.</li><!-- listas -->
+    <li style="color: rgb(214, 36, 12);">Formigable, 6a, 15m.</li>
+    <li style="color: chartreuse;">Àcid fòrmic, V+, 18m.</li>
+</ol>
+</div>
+<h2>
+    Sector Kale brroka
+</h2> 
+<img src="C:\Users\34639\Desktop\escalada\IMG-20201111-WA0012.jpg" alt="img no dispon"width="" height="442">
+<img src="C:\Users\34639\Desktop\escalada\kale.jpg" alt="img no dispon"width="" height="442">
+<p>
+    Sector con más de 30 vías y espectaculares vistas. 6a+ a 8a+. Altura de las vías de 25-40 metros.
+</p>
+<!-- Introducir vídeo youtube -->
+
+<a href="https://www.w3schools.com/html/html_youtube.asp" target="_blank">insertar video youtube</a>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/l0GO7im6A9w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h2>
+    Sector de la Pasquala
+</h2> 
+<p>
+Sector con infinitas vías con grado de V a 8a con alturas máximas de 30 metros.
+</p>
+<h3>
+    Mapa de las zonas
+</h3>
+<div style="height: 75vh; width: 90%; margin: auto;"><iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
+      src="https://www.instamaps.cat/visor.html?businessid=d5b997d1dadaf33879c22096914c05d5&3D=false&embed=1" ></iframe></div>
+
+
+<button onclick="getLocation()" style="margin: 20px;">Mostrar coordenadas</button>
+
+<p id="demo"></p>
+      
+
+<script >
+      var x = document.getElementById("demo");
+      
+      function getLocation() {
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(showPosition);
+        } else { 
+          x.innerHTML = "Geolocation is not supported by this browser.";
+        }
+      }
+      
+      function showPosition(position) {
+        x.innerHTML = "Latitude: " + position.coords.latitude + 
+        "<br>Longitude: " + position.coords.longitude;
+      }
+</script>
+</body>
+</html>
